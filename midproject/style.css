@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #244768;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #244768;
+    color: #fff6ea;
+    text-align: center;
+    margin: 0px;
+    padding: 20px;
+}
+
+nav {
+    background-color: #fff6ea;
+    color: #244768;
+    text-align: center;
+}
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #183754;
+    font-weight: bold;
+    padding: 14px 16px;
+    display: inline-block;
+}
+nav a:hover{
+    background-color: #183754;
+    color: #fff6ea;
+}
+
+footer{
+    background-color: #183754;
+    color: #fff6ea;
+    text-align: center;
+    padding: 40px;
+}
+
+main {
+    padding: 20px;
+}
+.card {
+    background-color: #183754;
+    color: #fff6ea;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    position: relative;
+    padding-bottom: 5px;
+}
+h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 20%; 
+    height: 3px; 
+    background-color: #fff6ea;
+}
+.my::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 55%; 
+    height: 3px; 
+    background-color: #fff6ea;
+}
+h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+}
+h3::before {
+    content: "┃";
+    color: #fff6ea;
+    margin-right: 10px;
+}
+h4 {
+    font-size: 20px;
+}
+.speech {
+    font-style: italic;
+}
+
+.work ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.work ul li {
+    margin-bottom: 8px;
+}
+.work li {
+    font-size: 18px;
+}
+
+.experience-work {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.experience-work img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.experience-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding-right: 5px;
+}
+.experience-item img {
+    width: 220px;
+    height: 220px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.text-content {
+    margin-top: 20px;
+    padding-right: 5px;
+}
+.text-content strong {
+    font-size: 22px;
+    display: block;
+    margin-bottom: 5px;
+}
+.text-content p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.line-icon, .phone-icon, .instagram-icon, .email-icon {
+    object-fit: contain;
+    height: 55px; 
+    cursor: pointer;
+    display: inline-block;
+}
+.line-icon {
+    width: 55px; 
+}
+.phone-icon, .email-icon {
+        width: 45px;
+}
+.instagram-icon {
+        width: 40px;
+}
+
+.profile{
+    display: flex;
+}
+.profile-container{
+    display: flex;
+    width: 50%;
+}
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: fit-content;
+    border-radius: 50%;
+}
+.profile-photo img {
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills {
+    display: flex;
+    gap: 20px;
+}
+.language-skills, .program-skills {
+    background-color: #fff6ea;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 8px;
+    color: #183754;
+    width: 100%;
+}
+.professional-skills {
+    background-color: #244768;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 8px;
+    color: #fff6ea;
+    width: 100%;
+}
+.language-skills h3::before, .program-skills h3::before {
+    content: "┃";
+    color: #183754;
+    margin-right: 10px;
+}
+.progress-container {
+    background-color: #244768; 
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.progress-container1 {
+    background-color: #fff6ea; 
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.progress-bar {
+    height: 10px;
+    background-color: #ffa500;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.clearfix{
+    clear: both;
+}
+@media screen and (max-width:800px) {
+    article {
+        float: none;
+        width: 100%;
+    }
+    .card {
+        padding: 15px;
+        margin: 15px 0px;
+    }
+    img {
+        max-width: 100%;
+        height: 90%;
+    }
+    .skills {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .profile, .experience-item, .experience-work {
+        flex-direction: column;
+    }
+    .profile-photo {
+        width: 100%;
+        display: flex;
+        justify-content: center; 
+        margin-bottom: 15px;
+    }
+    .profile-photo img {
+        width: 250px; 
+        height: 250px;
+    }
+    .text{
+        white-space: nowrap;
+    }
+}
